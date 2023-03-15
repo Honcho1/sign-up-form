@@ -1,0 +1,96 @@
+:root {
+  --button-color: #596d48;
+  --input-border-color: #e5e7eb;
+  --selected-border-color: blue;
+  --invalid-border-color: red;
+  --general-font-family: sans-serif;
+  --text-color: #fff;
+}
+
+@font-face {
+  font-family: "NorseBold";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  font-family: var(--general-font-family);
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  height: 100vh;
+}
+
+.right {
+  flex-grow: 2;
+  height: 100vh;
+  background-color: var(--text-color);
+  padding: 80px 120px 0 40px;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+  position: relative;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-credit {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  top: 450px;
+}
+
+a {
+  color: var(--text-color);
+}
+
+img {
+  width: 80px;
+  height: 100px;
+}
+
+.logo-text {
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  color: #fff;
+  font-family: "NorseBold", sans-serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-paragraph {
+  font-weight: bold;
+  line-height: 1.2;
+  word-spacing: 1.5;
+  font-size: 18px;
+}
+
+.first {
+  margin-bottom: 30px;
+}
+
+.second {
+  margin-bottom: 50px;
+}
