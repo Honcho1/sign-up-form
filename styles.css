@@ -38,6 +38,9 @@ body {
   flex-grow: 2;
   height: 100vh;
   background-color: var(--text-color);
+}
+
+.dummy-text {
   padding: 80px 120px 0 40px;
 }
 
@@ -93,4 +96,26 @@ img {
 
 .second {
   margin-bottom: 50px;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(44, 42, 42);
+}
+
+.input-label {
+  text-transform: uppercase;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+}
+
+.form-section {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
