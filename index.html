@@ -16,8 +16,11 @@
         </div>
         <p class="photo-credit">
           Photo by
-          <a href="https://unsplash.com/@haliewestphoto">Halle West</a> on
-          <a href="https://unsplash.com/">Unsplash</a>
+          <a class="image-link" href="https://unsplash.com/@haliewestphoto"
+            >Halle West</a
+          >
+          on
+          <a class="image-link" href="https://unsplash.com/">Unsplash</a>
         </p>
       </div>
       <div class="right">
@@ -31,51 +34,56 @@
           <p class="second main-paragraph">You <em>know</em> you want to.</p>
         </div>
 
-        <div class="form-section">
-          <p class="form-title">Let's do this!</p>
-          <form action="" method="get" class="my-form">
-            <div class="form-left">
-              <div class="form-row">
-                <label class="input-label" for="first-name">First Name</label>
-                <input id="first-name" name="first-name" type="text" />
+        <form action="" method="get" class="my-form">
+          <div class="form-section">
+            <p class="form-title">Let's do this!</p>
+            <div class="form-container">
+              <div class="form-left">
+                <div class="form-row">
+                  <label class="input-label" for="first-name">First Name</label>
+                  <input id="first-name" name="first-name" type="text" />
+                </div>
+                <div class="form-row">
+                  <label class="input-label" for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-row">
+                  <label class="input-label" for="password">Password</label>
+                  <input type="password" name="password" id="password" />
+                </div>
               </div>
-
-              <div class="form-row">
-                <label class="input-label" for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-
-              <div class="form-row">
-                <label class="input-label" for="password">Password</label>
-                <input type="password" name="password" id="password" />
-              </div>
-            </div>
-
-            <div class="form-right">
-              <div class="form-row">
-                <label class="input-label" for="surname">Last Name</label>
-                <input id="surname" name="surname" type="text" />
-              </div>
-
-              <div class="form-row">
-                <label class="input-label" for="phone-number"
-                  >Phone Number</label
-                >
-                <input type="number" name="phone-number" id="phone-number" />
-              </div>
-
-              <div class="form-row">
-                <label class="input-label" for="confirm-password"
-                  >Confirm Password</label
-                >
-                <input
-                  type="password"
-                  name="confirm-password"
-                  id="confirm-password"
-                />
+              <div class="form-right">
+                <div class="form-row">
+                  <label class="input-label" for="surname">Last Name</label>
+                  <input id="surname" name="surname" type="text" />
+                </div>
+                <div class="form-row">
+                  <label class="input-label" for="phone-number"
+                    >Phone Number</label
+                  >
+                  <input type="tel" name="phone-number" id="phone-number" />
+                </div>
+                <div class="form-row">
+                  <label class="input-label" for="confirm-password"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                  />
+                </div>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="submit-form">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+        <div class="log-in">
+          <p class="log-in-text">
+            Already have an account? <a class="log-in-link" href="#">Log in</a>
+          </p>
         </div>
       </div>
     </div>
