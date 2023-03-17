@@ -1,7 +1,7 @@
 :root {
   --button-color: #596d48;
   --input-border-color: #e5e7eb;
-  --selected-border-color: blue;
+  --selected-border-color: rgba(0, 0, 255, 0.8);
   --invalid-border-color: red;
   --general-font-family: sans-serif;
   --text-color: #fff;
@@ -121,6 +121,13 @@ input {
   height: 20px;
   border: 1px solid var(--input-border-color);
   border-radius: 4px;
+  padding: 3px 3px 0 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--selected-border-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-section {
@@ -153,6 +160,11 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background-color: #567a33;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .log-in-text {

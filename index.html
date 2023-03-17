@@ -41,7 +41,13 @@
               <div class="form-left">
                 <div class="form-row">
                   <label class="input-label" for="first-name">First Name</label>
-                  <input id="first-name" name="first-name" type="text" />
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    placeholder="Loki"
+                    required
+                  />
                 </div>
                 <div class="form-row">
                   <label class="input-label" for="email">Email</label>
@@ -49,13 +55,23 @@
                 </div>
                 <div class="form-row">
                   <label class="input-label" for="password">Password</label>
-                  <input type="password" name="password" id="password" />
+                  <input
+                    class="error"
+                    type="password"
+                    name="password"
+                    id="password"
+                  />
                 </div>
               </div>
               <div class="form-right">
                 <div class="form-row">
                   <label class="input-label" for="surname">Last Name</label>
-                  <input id="surname" name="surname" type="text" />
+                  <input
+                    id="surname"
+                    name="surname"
+                    type="text"
+                    placeholder="Odinson"
+                  />
                 </div>
                 <div class="form-row">
                   <label class="input-label" for="phone-number"
@@ -68,6 +84,7 @@
                     >Confirm Password</label
                   >
                   <input
+                    class="error"
                     type="password"
                     name="confirm-password"
                     id="confirm-password"
