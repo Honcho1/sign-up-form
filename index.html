@@ -34,7 +34,7 @@
           <p class="second main-paragraph">You <em>know</em> you want to.</p>
         </div>
 
-        <form action="" method="get" class="my-form">
+        <form action="" method="get" class="my-form" id="form">
           <div class="form-section">
             <p class="form-title">Let's do this!</p>
             <div class="form-container">
@@ -61,6 +61,7 @@
                     id="password"
                     required
                   />
+                  <div id="password-match-message" class="error"></div>
                 </div>
               </div>
               <div class="form-right">
@@ -104,5 +105,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const form = document.getElementById("form");
+      const password = document.getElementById("password");
+      const confirmPassword = document.getElementById("confirm-password");
+      const passwordMatchMessage = document.getElementById(
+        "password-match-message"
+      );
+
+      form.addEventListener("submit", (event) => {
+        if (password.value !== confirmPassword.value) {
+          event.preventDefault();
+          passwordMatchMessage.textContent = "* Passwords do not match";
+          passwordMatchMessage.style.color = "red";
+        } else {
+          passwordMatchMessage.textContent = "";
+        }
+      });
+    </script>
   </body>
 </html>
