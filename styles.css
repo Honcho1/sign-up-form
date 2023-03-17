@@ -187,3 +187,7 @@ button:hover {
   font-weight: 700;
   color: var(--button-color);
 }
+
+.log-in-link:hover {
+  color: #628b38;
+}
